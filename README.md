@@ -2,7 +2,9 @@
 
 # **Database Schema**
 
-[pythonproject-database-schema]: ./images/Database_Schema.png
+![database-schema]
+
+[database-schema]: ./images/Database_Schema.png
 
 ## `users`
 
