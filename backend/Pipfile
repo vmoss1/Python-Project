@@ -11,6 +11,7 @@ sqlalchemy = "*"
 flask-sqlalchemy = "*"
 boto3 = "*"
 flask-login = "*"
+flask-migrate = "*"
 
 [dev-packages]
 
