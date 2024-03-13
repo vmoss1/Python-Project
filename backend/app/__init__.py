@@ -15,7 +15,7 @@ db.init_app(app)
 
 
 @app.route("/", methods=["GET","POST"])
-# @login_required
+equired
 def upload_image():
     form = ImageForm()
 
