@@ -2,6 +2,8 @@
 
 # **Database Schema**
 
+[pythonproject-database-schema]: ./images/Database_Schema.png
+
 ## `users`
 
 | column name | data type | details               |
