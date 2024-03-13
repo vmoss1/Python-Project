@@ -33,6 +33,6 @@ def upload_image():
 
     if form.errors:
         print(form.errors)
-        return render_template("post_form.html", form=form, errors=form.errors)
+        return render_template("post_image_form.html", form=form, errors=form.errors)
 
-    return render_template("post_form.html", form=form, errors=None)
+    return render_template("post_image_form.html", form=form, errors=None)
