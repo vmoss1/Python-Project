@@ -18,7 +18,7 @@ ALLOWED_EXTENSIONS = {
 }
 
 def get_unique_filename(filename):
-    ext = filename.resplit(".", 1)[1].lower()
+    ext = filename.rsplit(".", 1)[1].lower()
     unique_filename = uuid.uuid4().hex
     return f"{unique_filename}.{ext}"
 

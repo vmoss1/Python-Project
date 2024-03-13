@@ -1,4 +1,6 @@
-<form action="/posts/new" method="POST" enctype="multipart/form-data">
+{% extends "hello_main.html" %}
+{% block main %}
+<form action="/" method="POST" enctype="multipart/form-data">
 
     {{ form.hidden_tag() }}
     {{ form.image.label }} {{ form.image }}
@@ -6,3 +8,5 @@
 
 
 </form>
+
+{% endblock %}
