@@ -5,8 +5,8 @@ import uuid
 
 s3 = boto3.client(
     "s3",
-    aws_access-key_id=os.environ.get("SECRET_TUNNEL"),
-    aws_access-key_id=os.environ.get("S3_SECRET")
+    aws_access_key_id=os.environ.get("SECRET_TUNNEL"),
+    aws_secret_access_key=os.environ.get("S3_SECRET")
 )
 
 ALLOWED_EXTENSIONS = {

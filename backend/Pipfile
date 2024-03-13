@@ -10,6 +10,7 @@ flask-wtf = "*"
 sqlalchemy = "*"
 flask-sqlalchemy = "*"
 boto3 = "*"
+flask-login = "*"
 
 [dev-packages]
 

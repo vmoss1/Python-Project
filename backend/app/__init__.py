@@ -1,14 +1,21 @@
-from flask import Blueprint, request
+from flask import Flask, Blueprint, request, render_template
 from app.models.image_model import db, ImageForm
 from flask_login import current_user, login_required
-from app.s3_helpers import (
+from .config import Configuration
+from app.routes.aws_helpers import (
     upload_file_to_s3, get_unique_filename)
 
-image_routes = Blueprint("images", __name__)
+# image_routes = Blueprint("images", __name__, url_prefix="")
+# app.register_blueprint(image_routes)
+
+app = Flask(__name__)
+app.config.from_object(Configuration)
+
+db.init_app(app)
 
 
-@image_routes.route("", methods=["POST"])
-@login_required
+@app.route("/", methods=["GET","POST"])
+# @login_required
 def upload_image():
     form = ImageForm()
 
