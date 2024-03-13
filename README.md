@@ -4,7 +4,7 @@
 
 ![database-schema]
 
-[database-schema]: ../images/Database_Schema.png
+[database-schema]: ./images/Database_Schema.png
 
 ## `users`
 
