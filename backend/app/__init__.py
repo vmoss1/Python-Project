@@ -1,9 +1,9 @@
 from flask import Flask, Blueprint, request, render_template, redirect
-from app.models.image_model import ImageForm
+from app.forms.image_form import ImageForm
 from app.models.image import db, Image
 from flask_login import current_user, login_required
 from .config import Configuration
-from app.routes.aws_helpers import (
+from app.aws_helpers import (
     upload_file_to_s3, get_unique_filename)
 from flask_migrate import Migrate
 from sqlalchemy import select
