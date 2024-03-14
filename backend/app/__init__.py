@@ -17,7 +17,7 @@ db.init_app(app)
 migrate = Migrate(app, db)
 
 @app.route("/", methods=["GET","POST"])
-equired
+# @login_required
 def upload_image():
     form = ImageForm()
     stmt = select(Image)

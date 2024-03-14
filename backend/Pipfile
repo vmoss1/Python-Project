@@ -12,6 +12,12 @@ flask-sqlalchemy = "*"
 boto3 = "*"
 flask-login = "*"
 flask-migrate = "*"
+pytest = "*"
+pycodestyle = "*"
+pylint = "*"
+rope = "*"
+alembic = "*"
+wtforms = "*"
 
 [dev-packages]
 
